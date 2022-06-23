@@ -9,7 +9,7 @@ cursor = connection.cursor()
 
 
 cursor.execute("""
-  CREATE Table Hours
+  CREATE Table IF NOT EXIST Hours
 """)
 
 connection.commit()
