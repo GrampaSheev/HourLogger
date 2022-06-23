@@ -9,7 +9,7 @@ cursor = connection.cursor()
 
 
 cursor.execute("""
-  CREATE TABLE qwdHours
+  CREATE Table Hours
 """)
 
 connection.commit()
