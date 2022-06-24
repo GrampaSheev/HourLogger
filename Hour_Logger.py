@@ -18,18 +18,16 @@ CREATE TABLE IF NOT EXISTS Hours (
 """)
 
 cursor.execute("""
-INSERT INTO Hours VALUES
-('{today}', '{hours}')
-""")
+INSERT INTO Hours 
+VALUES(?, ?) 
+""", (today, hours))
 
 cursor.execute("""
 SELECT * FROM hours
 """)
 
 rows = cursor.fetchall()
-print(rows)
-
 
 connection.commit()
-
 connection.close()
+print(rows)
