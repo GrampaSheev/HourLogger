@@ -1,6 +1,5 @@
 import sqlite3 as sql
 from datetime import date
-from sqlite3.dbapi2 import Row
 
 today = date.today()
 
@@ -20,7 +19,7 @@ CREATE TABLE IF NOT EXISTS Hours (
 
 cursor.execute("""
 INSERT INTO Hours VALUES
-('today', 'hours')
+('{today}', '{hours}')
 """)
 
 cursor.execute("""
