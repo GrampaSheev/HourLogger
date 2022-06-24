@@ -24,6 +24,7 @@ VALUES(?, ?)
 
 cursor.execute("""
 SELECT * FROM hours
+ORDER BY day DESC;
 """)
 
 rows = cursor.fetchall()
