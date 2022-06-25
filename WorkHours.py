@@ -22,13 +22,5 @@ INSERT INTO hours
 VALUES(?, ?) 
 """, (today, hours))
 
-cursor.execute("""
-SELECT * FROM hours
-ORDER BY day DESC;
-""")
-
-rows = cursor.fetchall()
-
 connection.commit()
 connection.close()
-print(rows)
