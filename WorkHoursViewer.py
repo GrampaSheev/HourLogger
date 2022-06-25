@@ -6,10 +6,13 @@ cursor = connection.cursor()
 
 cursor.execute("""
 SELECT * FROM hours
+ORDER BY day DESC;
 """)
 
 rows = cursor.fetchall()
 
+print(rows) 
+
 connection.commit()
 connection.close()
-print(rows)
+
