@@ -12,8 +12,8 @@ cursor = connection.cursor()
 
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS hours (
-    day DATE,
-    hours TEXT
+    day TEXT,
+    hours INT
 )
 """)
 
