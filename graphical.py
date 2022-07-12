@@ -98,7 +98,7 @@ def Selection():
         connection.close()
 
 
-        ViewerLabel = Label(Viewer, text=rows)
+        ViewerLabel = Label(Viewer, text=rows, wraplength=960)
         ViewerLabel.pack()
 
         def refresh():
