@@ -97,7 +97,8 @@ def Selection():
         connection.commit()
         connection.close()
 
-
+        WarningLabel = Label(Viewer, text="Disclaimer: I recommend using a database viewer like DB Browser")
+        WarningLabel.pack()
         ViewerLabel = Label(Viewer, text=rows, wraplength=960)
         ViewerLabel.pack()
 
